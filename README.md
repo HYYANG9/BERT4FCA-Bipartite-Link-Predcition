@@ -1,2 +1,16 @@
 # BERT4FCA
-BERT4FCA: A Method for Bipartite Link Prediction using Formal Concept Analysis and BERT
+This is the codebase for the paper: [BERT4FCA: A Method for Bipartite Link Prediction using Formal Concept Analysis and BERT](https://arxiv.org/abs/2402.08236)
+## Overview
+Bipartete link prediction is the task of predicting the absence or presence of unobserved links in a *bipartite network*. There are two types of bipartite link prediction. The first type predicts the missing links between nodes from different node sets, such as recommender system. The second tyoe predicts the missing links between nodes from the same node sets, such as predicting the newly formulated co-authorship in an author-paper bipartete network.  
+We propose _BERT4FCA_, a method for both bipartete link prediction tasks in bipartite networks using formal concept analysis(FCA) and BERT. We use FCA to extract all maximal bi-cliques and their order relations. Then we use BERT to learn the information extracted by FCA and use the trained BERT to make link prediction. 
+
+
+## Architecture
+![Workflow of BERT4FCA](https://github.com/HYYANG9/BERT4FCA/files/14277024/Figure_4.pdf)
+
+
+## Files Description
+### Dataset
+BMS-POS is a product purchased transactions network provided by KDD Cup 2000.  
+ICFCA is an author-paper network.  
+Paper-keyword is an original dataset generated from the DBLP dump.  
