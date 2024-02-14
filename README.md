@@ -11,6 +11,14 @@ We propose _BERT4FCA_, a method for both bipartete link prediction tasks in bipa
 
 ## Files Description
 ### Dataset
+This file contains all three datasets used in the paper.
 BMS-POS is a product purchased transactions network provided by KDD Cup 2000.  
 ICFCA is an author-paper network.  
-Paper-keyword is an original dataset generated from the DBLP dump.  
+Paper-keyword is an original dataset generated from the DBLP dump.    
+
+### Object-Object Prediction
+This file contains the codebase of bipartite link prediciton between nodes from the same node sets on each dataset.
+In BMS-POS dataset, we predict two products will be likely to be bought by the same customer.
+In ICFCA dataset, we predict future co-authorships or seek potential co-authors from an author-paper network at a certain time point.
+In Parper-keyword dataset, we predict potentially related keywords, which may give inspiration for new research.
+
