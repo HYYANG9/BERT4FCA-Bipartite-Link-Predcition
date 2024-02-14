@@ -24,3 +24,16 @@ In Parper-keyword dataset, we predict potentially related keywords, which may gi
 
 ### Object-Attribute Prediction
 This file contains the codebase of bipartite link prediction between nodes form different node sets on each dataset. For each dataset, we pre-train a BERT model on objects and another model on attributes, then fine-tune on the two pre-trained BERT. We predict the potentially missing links given the known network. 
+
+### Citation
+Please cite our paper as:
+```
+@misc{peng2024bert4fca,
+      title={BERT4FCA: A Method for Bipartite Link Prediction using Formal Concept Analysis and BERT}, 
+      author={Siqi Peng and Hongyuan Yang and Akihiro Yamamoto},
+      year={2024},
+      eprint={2402.08236},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+```
