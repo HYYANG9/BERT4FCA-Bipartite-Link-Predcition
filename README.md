@@ -23,4 +23,5 @@ In ICFCA dataset, we predict future co-authorships or seek potential co-authors 
 In Parper-keyword dataset, we predict potentially related keywords, which may give inspiration for new research.   
 
 ### Object-Attribute Prediction
+This file contains the codebase of bipartite link prediction between nodes form different node sets on each dataset. For each dataset, we pre-train a BERT model on objects and another model on attributes, then fine-tune on the two pre-trained BERT.   
 
